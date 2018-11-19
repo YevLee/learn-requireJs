@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script data-main='scripts/main' src="scripts/require.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="main">hello world</div>
+	<script>
+		require(['jquery','window'],function($,w){
+			var cfg={
+				color:"red",
+			}
+			new w.Window().alertMsg(".main",cfg);
+		})
+	</script>
+</body>
+</html>

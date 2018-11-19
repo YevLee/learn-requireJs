@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script data-main="scripts/main" src="scripts/require.js"></script>
+	<title>demo1</title>
+	<script>
+		require(['jquery','student'], function ($,stu) {
+    //调用student模块的eat()和say()方法
+   $(function(){
+   	 stu.eat();
+     stu.say();
+   })
+});
+	</script>
+</head>
+<body>
+	<div class="main">
+			<p>hello world</p>
+	</div>
+</body>
+</html>
